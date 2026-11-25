@@ -1,0 +1,125 @@
+{
+  "benchmark_config": {
+    "number_of_runs": 20,
+    "base_seed": 42,
+    "population_size": 100,
+    "generations": 200,
+    "crossover_rate": 0.9,
+    "mutation_rate": 0.2,
+    "tournament_size": 3,
+    "elitism_count": 2,
+    "local_search_rate": 0.2,
+    "local_search_max_passes": 5
+  },
+  "dataset_information": {
+    "number_of_locations": 20,
+    "distance_units": "synthetic Cartesian units"
+  },
+  "nearest_neighbor_result": {
+    "algorithm_name": "Nearest Neighbor",
+    "deterministic": true,
+    "best_route": [
+      0,
+      1,
+      2,
+      5,
+      4,
+      19,
+      3,
+      12,
+      16,
+      11,
+      13,
+      10,
+      9,
+      8,
+      17,
+      6,
+      7,
+      18,
+      14,
+      15
+    ],
+    "best_distance": 405.10878723497444,
+    "execution_time": 0.0001537000061944127
+  },
+  "ga_statistics": {
+    "distances": {
+      "count": 20,
+      "min": 330.59501044704194,
+      "max": 388.3423783713483,
+      "mean": 362.86934772198293,
+      "median": 366.30383898592515,
+      "standard_deviation": 14.84199124171538
+    },
+    "execution_times": {
+      "count": 20,
+      "min": 1.750130700005684,
+      "max": 2.1233041000086814,
+      "mean": 1.9028332500078249,
+      "median": 1.874615399981849,
+      "standard_deviation": 0.0982707822669966
+    },
+    "initial_improvements": {
+      "count": 20,
+      "min": 33.200617730759205,
+      "max": 43.114480602734254,
+      "mean": 38.73074040355541,
+      "median": 38.69074332260882,
+      "standard_deviation": 2.557613698627281
+    },
+    "improvements_over_nn": {
+      "count": 20,
+      "min": 4.138742330933735,
+      "max": 18.39352271189132,
+      "mean": 10.426690519673041,
+      "median": 9.578895711916834,
+      "standard_deviation": 3.6637050859888185
+    }
+  },
+  "hybrid_statistics": {
+    "distances": {
+      "count": 20,
+      "min": 323.66768302492994,
+      "max": 323.66768302492994,
+      "mean": 323.6676830249299,
+      "median": 323.66768302492994,
+      "standard_deviation": 5.833929830451348e-14
+    },
+    "execution_times": {
+      "count": 20,
+      "min": 2.773574599996209,
+      "max": 3.7876856999937445,
+      "mean": 3.0486281349963975,
+      "median": 2.961004150012741,
+      "standard_deviation": 0.24383575092045767
+    },
+    "initial_improvements": {
+      "count": 20,
+      "min": 39.93179599623311,
+      "max": 47.800759396232486,
+      "mean": 45.31987000272305,
+      "median": 45.474797634637255,
+      "standard_deviation": 1.9161389872611372
+    },
+    "improvements_over_nn": {
+      "count": 20,
+      "min": 20.10351460552407,
+      "max": 20.10351460552407,
+      "mean": 20.103514605524076,
+      "median": 20.10351460552407,
+      "standard_deviation": 7.292412288064185e-15
+    }
+  },
+  "comparison_statistics": {
+    "paired_hybrid_over_ga": {
+      "count": 20,
+      "min": 2.09541197029702,
+      "max": 16.654040081243423,
+      "mean": 10.658310276588015,
+      "median": 11.638806392357552,
+      "standard_deviation": 3.734580727929737
+    }
+  },
+  "evaluation_budget_notes": "Same matrix, GA settings, and seed schedule. Hybrid adds 2-Opt work; equal generations are not equal computational budgets. Exact objective evaluation counts were not measured. Algorithm times include initialization, evolution, local search when applicable, and scoring. Uses manual Linear Congruential Generator (LCG) and scratch math/sorting implementations."
+}
